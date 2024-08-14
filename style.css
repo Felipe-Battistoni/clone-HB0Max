@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --lt-color-gray-100: #f8f9fc;
+    --lt-color-gray-200: #f1f3f9;
+    --lt-color-gray-300: #dee3ed;
+    --lt-color-gray-400: #c2c9d6;
+    --lt-color-gray-500: #8f96a3;
+    --lt-color-gray-600: #5e636e;
+    --lt-color-gray-700: #2f3237;
+    --lt-color-gray-800: #1d1e20;
+    --lt-color-gray-900: #111213;
+    --lt-color-black: #000;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/image-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 40px -200px 80px 80px rgba(0, 0, 0, 0.966);
+}
+
+.nav {
+    display: flex;
+    padding: 25px 0;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    margin-left: 60px;
+}
+
+
+.nav__menu {
+    display: flex;
+    gap: 10px;
+}
+
+.nav__menu li {
+    color: #ffffffcc;
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 18px;
+    list-style: none;
+    text-wrap: nowrap;
+    letter-spacing: 0.5px;
+}
+
+.nav__menu a {
+    text-decoration: none;
+}
+
+.nav__perfil {
+    display: flex;
+    margin-right: 48px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__perfil li {
+    list-style: none;
+    margin-right: 22px;
+}
+
+.nav__perfil i {
+    font-size: 22px;
+    color: #fff;
+}
+
+.episodio__logo {
+    margin-top: 300px;
+    margin-left: 60px;
+}
+
+.episodio__logo img {
+    width: 600px;
+    padding-bottom: 10px;
+}
+
+.episodio__dados {
+    display: flex;
+    margin-left: 60px;
+    padding: 8px 0 0 0;
+}
+
+.episodio__dados img {
+    margin-right: 12px;
+}
+
+.episodio__dados h3 {
+    margin-right: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--lt-color-gray-400);
+}
+
+.episodio__botao {
+    margin-left: 60px;
+    gap: 10px;
+    padding: 20px 0 15px 0;
+    display: flex;
+}
+
+.episodio__botao__geral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.episodio__botao--play {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 125px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.episodio__botao--play:hover {
+    background-color: #fff;
+}
+
+.episodio__botao--reiniciar {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 125px;
+    border-radius: 5px;
+    border: none;
+    background-color: #8697ce79;
+    cursor: pointer;
+}
+
+.episodio__botao--reiniciar:hover {
+    background-color: #8697ce9f;
+
+}
+
+.episodio__botao__geral i {
+    margin-right: 8px;
+    font-size: 22px;
+}
+
+.episodio__trailer {
+    display: flex;
+    margin-left: 60px;
+    padding-bottom: 25px;
+}
+
+.episodio__trailer__minha-lista {
+    width: 100px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.episodio__trailer__minha-lista:hover {
+    background-color: #8697ce79;
+}
+
+.episodio__trailer__minha-lista p {
+    font-weight: 400;
+    color: var(--lt-color-gray-400);
+    font-size: 14px;
+}
+
+.episodio__trailer__trailer {
+    width: 100px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.episodio__trailer__trailer:hover {
+    background-color: #8697ce79;
+}
+
+.episodio__trailer__trailer p {
+    font-weight: 400;
+    color: var(--lt-color-gray-400);
+    font-size: 14px;
+}
+
+.episodio__trailer__trailer a {
+    text-decoration: none;
+}
+
+.episodio__trailer i {
+    color: var(--lt-color-gray-400);
+    font-size: 24px;
+}
+
+.episodio__sinopse {
+    margin-left: 60px;
+    color: #fff;
+    width: 800px;
+}
+
+.episodio__sinopse h2 {
+    font-size: 18px;
+    padding-bottom: 8px 0;
+}
+
+.episodio__sinopse p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 8px 0;
+    color: var(--lt-color-gray-400);
+}
+
+.episodio__sinopse h3 {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 5px;
+    color: var(--lt-color-gray-400);
+}
+
+.episodio__sinopse h4 {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 6px;
+    color: var(--lt-color-gray-400);
+}
+
+.episodio__trailer__minha-lista a {
+    text-decoration: none;
+}
